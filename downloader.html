@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="downloader.css" />
+    <title>YouTube Downloader</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      h1, p {
+        font-family: sans-serif;
+      }
+
+      html, body {
+        width: calc(100vw - 20px);
+        height: calc(100vh - 20px);
+        margin: 0;
+        padding: 10px;
+        background-color: #2b2a33;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Pobieranie zostało rozpoczęte!</h1>
+    <p>
+      Jeżeli widzisz monit o potwierdzenie otwarcia aplikacji, zaznacz opcję:
+      <br/>
+      <img src="data:image/png;base64,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" />
+      <br/>
+      a następnie kliknij <code>Otwórz odnośnik</code>.
+    </p>
+    <hr />
+    <p>
+      Po otwarciu aplikacji YouTube Downloader, możesz zamknąć tę kartę.
+      Możesz też skonfigurować automatyczne zamykanie tej karty po jednej sekundzie w ustawieniach rozszerzenia.
+    </p>
+    <script src="start_download.js"></script>
+  </body>
+</html>

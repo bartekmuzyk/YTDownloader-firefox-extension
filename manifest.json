@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Downloader",
+    "version": "1.0",
+    "description": "Integracja z YouTube Downloader",
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": "icons/icon-32.png",
+        "default_title": "Pobierz film",
+        "default_popup": "popup/popup.html"
+    },
+    "options_ui": {
+        "page": "settings/options.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ytdl@bartosz.pl"
+        }
+    }
+}
