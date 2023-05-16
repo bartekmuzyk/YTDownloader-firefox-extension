@@ -7,7 +7,7 @@ function saveOptions(e) {
   
   function restoreOptions() {
     function setCurrentChoice(result) {
-      document.querySelector("#autoclose").value = result.autoclose || false;
+      document.querySelector("#autoclose").checked = result.autoclose || false;
     }
   
     function onError(error) {
